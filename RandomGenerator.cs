@@ -21,4 +21,9 @@ public static class RandomGenerator
         }
         return word;
     }
+
+    public static int GenerateRandomAge()
+    {
+        return Random.Next(1, 99);
+    }
 }
