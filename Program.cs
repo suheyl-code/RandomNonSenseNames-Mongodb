@@ -1,6 +1,7 @@
 ﻿
 using MongoDB.Driver;
 
+// How many first names/last names? set the limit bellow:
 SendToMongoDatabase(10);
 
 
