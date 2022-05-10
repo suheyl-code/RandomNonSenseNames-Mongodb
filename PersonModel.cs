@@ -35,6 +35,6 @@ public class PersonModel
 
     public override string ToString()
     {
-        return $"{FirstName} {LastName} {Age}]";
+        return $"{FirstName}, {LastName}, {Age}";
     }
 }
