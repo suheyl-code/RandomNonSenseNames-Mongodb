@@ -36,13 +36,19 @@ namespace RandomNames_Mongodb
             }
         }
 
-        public static void RetrieveAll()
+        public static void PrintAllOnScreen()
         {
             var results = collection.Find(_ => true);
             foreach (var item in results.ToList())
             {
                 Console.WriteLine(item.FirstName + ", " + item.LastName + ", " + item.Age.ToString());
             }
+        }
+
+        public static List<PersonModel> RetrieveAll()
+        {
+            var results = collection.Find(_ => true);
+            return results.ToList();
         }
 
         public static object RetrieveById(string id)

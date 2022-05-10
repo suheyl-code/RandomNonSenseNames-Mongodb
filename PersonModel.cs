@@ -11,7 +11,7 @@ public class PersonModel
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public int Age { get; set; }
-
+    
     /// <summary>
     /// 
     /// </summary>
@@ -22,16 +22,16 @@ public class PersonModel
         {
             var yourNewItem = new PersonModel
             {
-                
                 FirstName = RandomGenerator.GenerateRandomName(),
                 LastName = RandomGenerator.GenerateRandomName(),
-                Age = RandomGenerator.GenerateRandomAge(),
+                Age = RandomGenerator.GenerateRandomAge()
             };
 
             listOfNonsense.Add(yourNewItem);
         }
         return listOfNonsense;
     }
+
 
     public override string ToString()
     {

@@ -26,4 +26,5 @@ public static class RandomGenerator
     {
         return Random.Next(1, 99);
     }
+
 }
