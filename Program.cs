@@ -16,6 +16,10 @@ try
     {
         Console.WriteLine(name);
     }
+    Console.WriteLine();
+    
+    // Same as:
+    namesBelowTwenty.ToList().ForEach(e => Console.WriteLine(e));
 
     //var result = DatabaseConnection.RetrieveById("6279fda9b13eba466568476b");
     //Console.WriteLine(result.ToString());
